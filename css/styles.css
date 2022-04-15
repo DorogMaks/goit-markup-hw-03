@@ -12,16 +12,59 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+}
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* header + footer */
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   background-color: var(--primary-title-color);
 }
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--background-primary-color);
 }
 .logo {
@@ -41,22 +84,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.adress {
-  font-style: normal;
-}
-.footer-address,
-.footer-mail,
-.footer-tel {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--footer-adress-color);
-}
-.footer-address {
-  color: #fff;
-}
-/* index */
 .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -82,15 +113,41 @@ body {
 .header-tel:focus {
   color: var(--accent-color);
 }
+
+.adress {
+  margin-top: 20px;
+  font-style: normal;
+}
+.footer-address,
+.footer-mail,
+.footer-tel {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-adress-color);
+}
+.footer-address {
+  color: #fff;
+}
+.footer-list > li {
+  margin-bottom: 9px;
+  outline: 1px solid tomato;
+}
+/* index */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   background: var(--background-primary-color);
 }
 .hero-title {
+  margin-bottom: 30px;
+  outline: 2px solid tomato;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   color: var(--primary-title-color);
   text-transform: uppercase;
 }
@@ -100,7 +157,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  text-align: center;
+
   color: var(--primary-title-color);
   background-color: var(--accent-color);
 }
@@ -110,14 +167,13 @@ body {
   /* opacity: 0.9; */
   cursor: pointer;
 }
-/* .visually-hidden {
-  display: none;
-} */
-.visually-hidden {
-  position: fixed;
-  transform: scale(0);
+.features {
+  padding-top: 94px;
 }
 .features-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -125,12 +181,24 @@ body {
   text-transform: uppercase;
 }
 .features-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+/* .features li {
+  outline: 1px solid tomato;
+} */
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .about-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -138,12 +206,18 @@ body {
   text-align: center;
 }
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--background-team-color);
 }
 .team-item {
   background-color: var(--primary-title-color);
+  outline: 1px solid tomato;
 }
 .team-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.18;
@@ -151,6 +225,8 @@ body {
   text-align: center;
 }
 .team-item-title {
+  margin-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -158,6 +234,8 @@ body {
   text-align: center;
 }
 .team-item-text {
+  margin-top: 10px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -166,6 +244,10 @@ body {
   color: var(--secondary-text-color);
 }
 /* portfolio */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .btn {
   font-family: inherit;
   font-weight: 500;
@@ -187,6 +269,9 @@ body {
   background-color: var(--primary-title-color);
 }
 .portfolio-title {
+  margin-top: 20px;
+  outline: 1px solid tomato;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -194,6 +279,9 @@ body {
   color: var(--primary-text-color);
 }
 .portfolio-text {
+  margin-top: 4px;
+  outline: 1px solid tomato;
+
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
