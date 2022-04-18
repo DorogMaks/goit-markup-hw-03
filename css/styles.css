@@ -76,9 +76,11 @@ img {
 .header-logo {
   color: #000;
 }
+.header-nav {
+  margin-left: 93px;
+}
 .header-list {
   display: flex;
-  margin-left: 93px;
 }
 .header-list .item + .item {
   margin-left: 50px;
@@ -124,6 +126,10 @@ img {
 }
 /*---------- index ----------*/
 /*---------- hero ----------*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -160,9 +166,6 @@ img {
   cursor: pointer;
 }
 /*---------- features ----------*/
-.features {
-  padding-top: 94px;
-}
 .features-list {
   display: flex;
 }
@@ -190,8 +193,7 @@ img {
 }
 /*---------- about ----------*/
 .about {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 .about-title {
   margin-bottom: 50px;
@@ -210,9 +212,6 @@ img {
 }
 /*---------- team ----------*/
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--bg-team-color);
 }
 .team-list {
@@ -234,8 +233,8 @@ img {
   text-align: center;
 }
 .team-legend {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -261,10 +260,6 @@ img {
   color: var(--secondary-text-color);
 }
 /*---------- portfolio ----------*/
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .btn-list {
   display: flex;
   justify-content: center;
@@ -277,8 +272,6 @@ img {
   padding: 6px 22px;
   border-radius: 4px;
   border: 1px solid transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 
   font-family: inherit;
   font-weight: 500;
@@ -295,6 +288,8 @@ img {
   cursor: pointer;
   color: var(--hero-title-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-list {
   display: flex;
@@ -311,9 +306,7 @@ img {
   border-right: 1px solid #eeeeee;
 }
 .portfolio-title {
-  /* padding-top: 20px; */
   /*legoutline: 1px solid tomato;*/
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
